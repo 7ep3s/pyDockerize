@@ -1,1 +1,7 @@
-#
+FROM python:3.13
+
+ADD app1.py .
+
+RUN pip install requests time
+
+CMD ["python", "./app1.py"]
